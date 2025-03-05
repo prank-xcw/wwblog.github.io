@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python使用(一) | 迷糊博客</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="迷糊的博客，记录开发问题，解决日常小问题">
+    
+    <link rel="preload" href="/assets/css/0.styles.60661dde.css" as="style"><link rel="preload" href="/assets/js/app.6782e3f3.js" as="script"><link rel="preload" href="/assets/js/7.bbefbf10.js" as="script"><link rel="preload" href="/assets/js/2.0349392a.js" as="script"><link rel="preload" href="/assets/js/1.83566d30.js" as="script"><link rel="preload" href="/assets/js/79.cdc1d143.js" as="script"><link rel="prefetch" href="/assets/js/10.3e842cb6.js"><link rel="prefetch" href="/assets/js/100.48d37daf.js"><link rel="prefetch" href="/assets/js/101.49aa185e.js"><link rel="prefetch" href="/assets/js/102.48f48842.js"><link rel="prefetch" href="/assets/js/11.4c99791f.js"><link rel="prefetch" href="/assets/js/14.0b0c6253.js"><link rel="prefetch" href="/assets/js/15.d2ca7161.js"><link rel="prefetch" href="/assets/js/16.1d522888.js"><link rel="prefetch" href="/assets/js/17.d9669e93.js"><link rel="prefetch" href="/assets/js/18.34c83be0.js"><link rel="prefetch" href="/assets/js/19.ebf4d991.js"><link rel="prefetch" href="/assets/js/20.bba0bcfb.js"><link rel="prefetch" href="/assets/js/21.988faded.js"><link rel="prefetch" href="/assets/js/22.ad121b6e.js"><link rel="prefetch" href="/assets/js/23.978eaf3a.js"><link rel="prefetch" href="/assets/js/24.804898be.js"><link rel="prefetch" href="/assets/js/25.54aca470.js"><link rel="prefetch" href="/assets/js/26.41565a57.js"><link rel="prefetch" href="/assets/js/27.ce6a8795.js"><link rel="prefetch" href="/assets/js/28.553d7ab5.js"><link rel="prefetch" href="/assets/js/29.988246ec.js"><link rel="prefetch" href="/assets/js/3.51a475f0.js"><link rel="prefetch" href="/assets/js/30.c90c4bbc.js"><link rel="prefetch" href="/assets/js/31.aa085ec1.js"><link rel="prefetch" href="/assets/js/32.bd390df8.js"><link rel="prefetch" href="/assets/js/33.8ba5d925.js"><link rel="prefetch" href="/assets/js/34.28bf7738.js"><link rel="prefetch" href="/assets/js/35.f0cd5f0f.js"><link rel="prefetch" href="/assets/js/36.ae5fa301.js"><link rel="prefetch" href="/assets/js/37.8a449a31.js"><link rel="prefetch" href="/assets/js/38.9a1e1d8a.js"><link rel="prefetch" href="/assets/js/39.dc0d4665.js"><link rel="prefetch" href="/assets/js/4.657b2931.js"><link rel="prefetch" href="/assets/js/40.b7612222.js"><link rel="prefetch" href="/assets/js/41.203d804e.js"><link rel="prefetch" href="/assets/js/42.10ecf308.js"><link rel="prefetch" href="/assets/js/43.625e37c1.js"><link rel="prefetch" href="/assets/js/44.738a379c.js"><link rel="prefetch" href="/assets/js/45.5f4eaccf.js"><link rel="prefetch" href="/assets/js/46.59364728.js"><link rel="prefetch" href="/assets/js/47.0cc439df.js"><link rel="prefetch" href="/assets/js/48.04f1927a.js"><link rel="prefetch" href="/assets/js/49.5162f302.js"><link rel="prefetch" href="/assets/js/5.662bba95.js"><link rel="prefetch" href="/assets/js/50.880f0a24.js"><link rel="prefetch" href="/assets/js/51.153dcb68.js"><link rel="prefetch" href="/assets/js/52.6a8379a4.js"><link rel="prefetch" href="/assets/js/53.3b4c0c52.js"><link rel="prefetch" href="/assets/js/54.ea136a46.js"><link rel="prefetch" href="/assets/js/55.810eaf88.js"><link rel="prefetch" href="/assets/js/56.c375f2df.js"><link rel="prefetch" href="/assets/js/57.1b5dfcd5.js"><link rel="prefetch" href="/assets/js/58.7dcaf2cc.js"><link rel="prefetch" href="/assets/js/59.da943301.js"><link rel="prefetch" href="/assets/js/6.cd0ff48c.js"><link rel="prefetch" href="/assets/js/60.504e2b46.js"><link rel="prefetch" href="/assets/js/61.5f12f717.js"><link rel="prefetch" href="/assets/js/62.058fc182.js"><link rel="prefetch" href="/assets/js/63.cd5c6e56.js"><link rel="prefetch" href="/assets/js/64.ed6a1467.js"><link rel="prefetch" href="/assets/js/65.60bf9630.js"><link rel="prefetch" href="/assets/js/66.1d86c25c.js"><link rel="prefetch" href="/assets/js/67.91a4a3bf.js"><link rel="prefetch" href="/assets/js/68.6eeabcf7.js"><link rel="prefetch" href="/assets/js/69.eb37478d.js"><link rel="prefetch" href="/assets/js/70.b929ad33.js"><link rel="prefetch" href="/assets/js/71.62901ca2.js"><link rel="prefetch" href="/assets/js/72.47aad926.js"><link rel="prefetch" href="/assets/js/73.ea92d3d2.js"><link rel="prefetch" href="/assets/js/74.08927bd1.js"><link rel="prefetch" href="/assets/js/75.e3ce727f.js"><link rel="prefetch" href="/assets/js/76.38279207.js"><link rel="prefetch" href="/assets/js/77.109d8fb9.js"><link rel="prefetch" href="/assets/js/78.d907f28a.js"><link rel="prefetch" href="/assets/js/8.77d757b7.js"><link rel="prefetch" href="/assets/js/80.a613adfe.js"><link rel="prefetch" href="/assets/js/81.d85857ad.js"><link rel="prefetch" href="/assets/js/82.5d974220.js"><link rel="prefetch" href="/assets/js/83.3afad072.js"><link rel="prefetch" href="/assets/js/84.06a032f7.js"><link rel="prefetch" href="/assets/js/85.9342b015.js"><link rel="prefetch" href="/assets/js/86.6fd7ec68.js"><link rel="prefetch" href="/assets/js/87.30330fd3.js"><link rel="prefetch" href="/assets/js/88.390e8d0d.js"><link rel="prefetch" href="/assets/js/89.91769a13.js"><link rel="prefetch" href="/assets/js/9.7e8f5c25.js"><link rel="prefetch" href="/assets/js/90.ca4ea401.js"><link rel="prefetch" href="/assets/js/91.88f0fdcd.js"><link rel="prefetch" href="/assets/js/92.bba48f0d.js"><link rel="prefetch" href="/assets/js/93.9c0b61f2.js"><link rel="prefetch" href="/assets/js/94.cd40366f.js"><link rel="prefetch" href="/assets/js/95.65c8681e.js"><link rel="prefetch" href="/assets/js/96.516d42a8.js"><link rel="prefetch" href="/assets/js/97.0f96f988.js"><link rel="prefetch" href="/assets/js/98.f78db1b8.js"><link rel="prefetch" href="/assets/js/99.655d43cc.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.a3d83172.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.60661dde.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>迷糊笔记</h3> <p class="description" data-v-59e6cb88>迷糊的博客，记录开发问题，解决日常小问题</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>恶作剧</span>
+          
+        <!---->
+        2025
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="迷糊博客" class="logo"> <span class="site-name">迷糊博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/hodoop/" class="nav-link"><i class="undefined"></i>
+  hodoop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/learn/" class="nav-link"><i class="undefined"></i>
+  learn
+</a></li><li class="dropdown-item"><!----> <a href="/categories/go/" class="nav-link"><i class="undefined"></i>
+  go
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mq/" class="nav-link"><i class="undefined"></i>
+  mq
+</a></li><li class="dropdown-item"><!----> <a href="/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mac/" class="nav-link"><i class="undefined"></i>
+  mac
+</a></li><li class="dropdown-item"><!----> <a href="/categories/springBoot/" class="nav-link"><i class="undefined"></i>
+  springBoot
+</a></li><li class="dropdown-item"><!----> <a href="/categories/web/" class="nav-link"><i class="undefined"></i>
+  web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="http://chat.onceprank.cn" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  chatGpt
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/prank-xcw/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    恶作剧
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>62</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>31</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41><li class="social-item" data-v-1fad0c41><i class="iconfont reco-github" style="color:#abbd81;" data-v-1fad0c41></i></li></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/hodoop/" class="nav-link"><i class="undefined"></i>
+  hodoop
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/learn/" class="nav-link"><i class="undefined"></i>
+  learn
+</a></li><li class="dropdown-item"><!----> <a href="/categories/go/" class="nav-link"><i class="undefined"></i>
+  go
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mq/" class="nav-link"><i class="undefined"></i>
+  mq
+</a></li><li class="dropdown-item"><!----> <a href="/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mac/" class="nav-link"><i class="undefined"></i>
+  mac
+</a></li><li class="dropdown-item"><!----> <a href="/categories/springBoot/" class="nav-link"><i class="undefined"></i>
+  springBoot
+</a></li><li class="dropdown-item"><!----> <a href="/categories/web/" class="nav-link"><i class="undefined"></i>
+  web
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="http://chat.onceprank.cn" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  chatGpt
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/prank-xcw/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Python使用(一)</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>恶作剧</span>
+          
+        <!---->
+        2025
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">Python使用(一)</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>恶作剧</span></i> <!----> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>python</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <p>Python是一个解释型编程语言，简单易用，学习成本低，具有可扩展性、跨平台性。用于开发小工具</p> <blockquote><p>下载地址：https://www.python.org/downloads/</p></blockquote> <h2 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h2> <h3 id="int"><a href="#int" class="header-anchor">#</a> int</h3> <p>整型，不区分长整型和短整型</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 十进制</span>
+a <span class="token operator">=</span> <span class="token number">10</span>
+
+<span class="token comment"># 十六进制 16</span>
+b <span class="token operator">=</span> <span class="token number">0x10</span>
+
+<span class="token comment"># 八进制 8</span>
+c <span class="token operator">=</span> <span class="token number">0o10</span>
+
+<span class="token comment"># 二进制 2</span>
+d <span class="token operator">=</span> <span class="token number">0b10</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="float"><a href="#float" class="header-anchor">#</a> float</h3> <p>浮点型，python中只有一个浮点类型float</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 1.十进制形式</span>
+num <span class="token operator">=</span> <span class="token number">3.1415926</span>
+
+<span class="token comment"># 2.指数形式 固定写法 aEn  a尾数 E固定 n指数</span>
+
+<span class="token comment"># 其中 2.1 是尾数，5 是指数。 = 2.1 * 10^5</span>
+num1 <span class="token operator">=</span> <span class="token number">2.1E5</span>
+<span class="token comment"># 其中 3.7 是尾数，-2 是指数。 = 3.7 * 10^-2</span>
+num2 <span class="token operator">=</span> <span class="token number">3.7E-2</span>
+<span class="token comment"># 其中 0.5 是尾数，7 是指数。 = 0.5 * 10^7</span>
+num3 <span class="token operator">=</span> <span class="token number">0.5E7</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">,</span> num3<span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="complex"><a href="#complex" class="header-anchor">#</a> complex</h3> <p>复数类型，python中的内置类型，以<code>j</code> 或<code>J</code>结尾 格式为：<code>a+bj</code></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+    complex 复数使用
+&quot;&quot;&quot;</span>
+
+area <span class="token operator">=</span> <span class="token number">1.2</span> <span class="token operator">*</span> <span class="token number">5j</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="bool"><a href="#bool" class="header-anchor">#</a> bool</h3> <p>布尔类型</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+    bool 布尔类型使用
+    ⚠️首字母必须大写，布尔类型可用于整数来表示 True=1 False=0
+&quot;&quot;&quot;</span>
+a <span class="token operator">=</span> <span class="token boolean">True</span>
+b <span class="token operator">=</span> <span class="token boolean">False</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">12</span> <span class="token operator">&gt;</span> <span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="内置函数"><a href="#内置函数" class="header-anchor">#</a> 内置函数</h2> <table><thead><tr><th>函数名</th> <th>说明</th></tr></thead> <tbody><tr><td>print()</td> <td>输出对象到控制台</td></tr> <tr><td>len(s)</td> <td>返回字符串、列表、数组长度</td></tr> <tr><td>type(obj)</td> <td>返回对象数据类型</td></tr> <tr><td>list(iterable)</td> <td>将可迭代的对象转化为列表</td></tr> <tr><td>set(iterable)</td> <td>将 可迭代的对象转换为集合，去除重复值</td></tr> <tr><td>dict(**kwargs)</td> <td>创建字典，可使用关键字参数</td></tr> <tr><td>range( start, stop [, step])</td> <td>返回整数序列，用于循环</td></tr> <tr><td>sum( iterable, start = 0)</td> <td>返回迭代对象中元素总和，start为起始位置</td></tr> <tr><td>max( iterable, *[, key, default])</td> <td>返回迭代对象中最大值</td></tr> <tr><td>min( iterable, *[, key, default])</td> <td>返回迭代对象中最小值</td></tr> <tr><td>abs(x)</td> <td>返回数字的绝对值</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>int(x, base=10)</td> <td>将字符串或数字转换为整型，base指定进制</td></tr> <tr><td>float(x)</td> <td>将字符串或数字转换为浮点型</td></tr> <tr><td>complex(real [, imag])</td> <td>创建一个复数</td></tr> <tr><td>str(obj)</td> <td>对象转换为字符串类型</td></tr> <tr><td>chr(x)</td> <td>将整数转换为一个字符</td></tr> <tr><td>ord(s)</td> <td>将字符转换为对应整数</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h2 id="算数运算符"><a href="#算数运算符" class="header-anchor">#</a> 算数运算符</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+    运算符号使用
+    +       加法
+    -       减法
+    *       乘法
+    /       除法
+    //      整除（只保留商）
+    %       取余（除数余数部分）
+    **      次方运算（x 的 y 次方）
+&quot;&quot;&quot;</span>
+<span class="token comment"># 1.加法运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+c <span class="token operator">=</span> <span class="token string">&quot;加法运算&quot;</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">+</span> c<span class="token punctuation">)</span>
+<span class="token comment"># 输出 23加法运算</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">,</span> <span class="token string">&quot;%s&quot;</span> <span class="token operator">%</span> c<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+<span class="token comment"># 输出 5加法运算</span>
+
+
+<span class="token comment"># 2.减法运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">-</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token comment"># 输出 -1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span>
+<span class="token comment"># 输出 -2</span>
+
+
+<span class="token comment"># 3.乘法运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">*</span> b<span class="token punctuation">)</span>
+<span class="token comment"># 输出 6</span>
+
+
+<span class="token comment"># 4.除法运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">/</span> b<span class="token punctuation">)</span>
+<span class="token comment"># 输出 0.6666666666666666</span>
+
+
+<span class="token comment"># 5.整除运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">//</span> b<span class="token punctuation">)</span>
+<span class="token comment"># 输出 0</span>
+
+
+<span class="token comment"># 6.取余运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">%</span> b<span class="token punctuation">)</span>
+<span class="token comment"># 输出 2</span>
+
+
+<span class="token comment"># 7.次方运算</span>
+a <span class="token operator">=</span> <span class="token number">2</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">**</span> b<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div><h2 id="序列"><a href="#序列" class="header-anchor">#</a> 序列</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+    序列使用
+&quot;&quot;&quot;</span>
+
+<span class="token builtin">str</span> <span class="token operator">=</span> <span class="token string">&quot;我是python语言&quot;</span>
+<span class="token comment"># 索引获取字符串 首部从0开始 尾部取值-1开始</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 切片获取字符串</span>
+<span class="token comment"># 指定起始位置和结束位置</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+<span class="token comment"># 输出 python</span>
+
+
+<span class="token comment"># 只指定结束位置</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+<span class="token comment"># 输出 python</span>
+
+<span class="token comment"># 字符串反转</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment"># 输出 言语nohtyp是我</span>
+
+
+<span class="token comment"># 检查元素是否包含在序列中</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;python&quot;</span> <span class="token keyword">in</span> <span class="token builtin">str</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;java&quot;</span> <span class="token keyword">not</span> <span class="token keyword">in</span> <span class="token builtin">str</span><span class="token punctuation">)</span>
+<span class="token comment"># 输出 True False</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="列表使用"><a href="#列表使用" class="header-anchor">#</a> 列表使用</h2> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+    python list使用
+    [element1, element2, element3, ..., elementN]
+&quot;&quot;&quot;</span>
+<span class="token comment"># 1.创建列表</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;创建列表&quot;</span><span class="token punctuation">)</span>
+list1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+list2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;d&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;e&quot;</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 元组创建列表</span>
+tuple1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+list3 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>tuple1<span class="token punctuation">)</span>
+
+<span class="token comment"># 区间创建列表</span>
+range1 <span class="token operator">=</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span>
+list4 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>range1<span class="token punctuation">)</span>
+
+<span class="token comment"># 字典创建列表</span>
+dict1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;c&quot;</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">&quot;d&quot;</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">&quot;e&quot;</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">}</span>
+list5 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>dict1<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>list1<span class="token punctuation">,</span> list2<span class="token punctuation">,</span> list3<span class="token punctuation">,</span> list4<span class="token punctuation">,</span> list5<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">''' 输出结果
+    [1, 2, 3, 4, 5]
+    ['a', 'b', 'c', 'd', 'e']
+    [1, 2, 3, 4, 5]
+    [1, 2, 3, 4, 5]
+    ['a', 'b', 'c', 'd', 'e']
+'''</span>
+
+<span class="token comment"># 2.列表添加元素操作</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;列表添加元素操作&quot;</span><span class="token punctuation">)</span>
+addList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 列表末尾添加元素，若添加元素为列表 则作为一个整体添加</span>
+addList<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>addList<span class="token punctuation">)</span>
+
+<span class="token comment"># 列表末尾添加元素，若添加元素为列表 则逐个数据进行添加</span>
+addList<span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>addList<span class="token punctuation">)</span>
+
+<span class="token comment"># 列表指定位置添加元素</span>
+addList<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">333</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>addList<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">''' 输出结果
+    [1, 2, 3, 4, 5, [6, 7]]
+    [1, 2, 3, 4, 5, [6, 7], 7, 8, 9]
+    [1, 2, 3, 333, 4, 5, [6, 7], 7, 8, 9]
+'''</span>
+
+<span class="token comment"># 3.列表删除元素操作 del()  pop() remove() clear()</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;列表删除元素操作&quot;</span><span class="token punctuation">)</span>
+delList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 删除指定位置或范围的元素</span>
+<span class="token keyword">del</span> delList<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>delList<span class="token punctuation">)</span>
+
+<span class="token comment"># 删除指定下标的元素</span>
+delList<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token comment"># 删除末尾的元素</span>
+delList<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>delList<span class="token punctuation">)</span>
+
+<span class="token comment"># 删除指定值的元素</span>
+delList<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>delList<span class="token punctuation">)</span>
+
+<span class="token comment"># 清空列表</span>
+delList<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>delList<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">''' 输出结果
+    [4, 5, 6, 7, 8, 9]
+    [5, 6, 7, 8]
+    [5, 6, 8]
+    []
+'''</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">3 分钟前</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#介绍" class="sidebar-link reco-side-介绍" data-v-b57cc07c>介绍</a></li><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#数据类型" class="sidebar-link reco-side-数据类型" data-v-b57cc07c>数据类型</a></li><li class="level-3" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#int" class="sidebar-link reco-side-int" data-v-b57cc07c>int</a></li><li class="level-3" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#float" class="sidebar-link reco-side-float" data-v-b57cc07c>float</a></li><li class="level-3" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#complex" class="sidebar-link reco-side-complex" data-v-b57cc07c>complex</a></li><li class="level-3" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#bool" class="sidebar-link reco-side-bool" data-v-b57cc07c>bool</a></li><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#内置函数" class="sidebar-link reco-side-内置函数" data-v-b57cc07c>内置函数</a></li><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#算数运算符" class="sidebar-link reco-side-算数运算符" data-v-b57cc07c>算数运算符</a></li><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#序列" class="sidebar-link reco-side-序列" data-v-b57cc07c>序列</a></li><li class="level-2" data-v-b57cc07c><a href="/guide/python/Python%EF%BC%88%E4%B8%80%EF%BC%89.html#列表使用" class="sidebar-link reco-side-列表使用" data-v-b57cc07c>列表使用</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.6782e3f3.js" defer></script><script src="/assets/js/7.bbefbf10.js" defer></script><script src="/assets/js/2.0349392a.js" defer></script><script src="/assets/js/1.83566d30.js" defer></script><script src="/assets/js/79.cdc1d143.js" defer></script>
+  </body>
+</html>
